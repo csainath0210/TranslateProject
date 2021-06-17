@@ -1,0 +1,55 @@
+<html>
+<title>
+Translation
+</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+    <style type="text/css">
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("1636cf12ee7183f3f1425f19d4dfab64.jpg");
+
+  /* Full height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.container4 {
+    height: 10em;
+    position: relative }
+div.container4 p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+</style>
+</head>
+</head>
+<body style="background-color:#000026;">
+    <div class="bg"></div>
+    <br>
+    <br>
+    <h1 style=" color:whitesmoke; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:20px; margin-left:10px;"> Saved Logs: </h1>
+    <div class="form-group" >
+        <ul style="color: whitesmoke;">
+            <% results.forEach(function(result) { %>
+                <li style="color: whitesmoke;">
+                    '<%= result.inText %>' in <strong> <%= result.lang %> </strong>, is '<%= result.outText %>'
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>
