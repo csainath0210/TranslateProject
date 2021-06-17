@@ -1,0 +1,80 @@
+<html>
+<title>
+Translation
+</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+    <style type="text/css">
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("1636cf12ee7183f3f1425f19d4dfab64.jpg");
+
+  /* Full height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.container4 {
+    height: 10em;
+    position: relative }
+div.container4 p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+</style>
+</head>
+</head>
+<body style="background-color:#000026;">
+    <div class="bg"></div>
+    <br>
+    <br>
+    <form action="http://localhost:8080/" method="POST" id="formTranslate">
+        <div class="form-group" align="center">
+            <div class="form-row">
+                <div class="col" style="margin-left: 100px;">
+                    <label style="display:inline-block;color: whitesmoke; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 20px; ">Input Text:</label>
+                    <br>
+                    <!--<textarea name="input" form="formTranslate" class="form-control-md" placeholder="Input Text Here..." style="height: 120px; width: 300px; border-radius: 15px;"> </textarea>-->
+                    <textarea name="input" class="form-control" placeholder="Input Text Here...." style="height: 120px; width: 300px; border-radius: 15px; "></textarea>
+                </div>
+                <div class="col" style="margin-left: -500px;">
+                    <label style="display:inline-block;color: whitesmoke; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 20px;">Output Text:</label>
+                    <br>
+                    <textarea name="output"  disabled class="form-control-md" style="height: 120px; width: 300px; border-radius: 15px; color:black;"></textarea>
+                </div>    
+            </div>
+            <br>
+            <div class="form-row" style="margin-left: 880px;" >
+                <input id="text"  id="lang" name="lang" class="form-control col-md-6" placeholder="Output language? Default is English" style="size: 20;">
+            </div>
+            <br>
+            <div class="form-row" style="margin-left: 775px;">
+                <button type="submit" class="btn btn-light">Execute</button>
+            </div>
+            <br>
+            <div class="form-row" style="margin-left: 500px;">
+                <input type="radio"  id="detect" name="option" value=1 style="margin-top: 10px;">
+                <label for="detect" style=" color:whitesmoke; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:20px; margin-left:10px;">Detect Language</label>
+                <input type="radio"  id="translate" name="option" value=2 style="margin-left: 20px; margin-top: 10px;">
+                <label for="translate" style=" color:whitesmoke; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:20px; margin-left:10px;">Translate language</label>
+                <input type="checkbox"  id="translate" name="option2" value=1 style="margin-left: 20px; margin-top: 10px;">
+                <label for="translate" style=" color:whitesmoke; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:20px; margin-left:10px;">Save Translation</label>
+                <a href="translate2.html" style="margin-left: 900px;">Saved Logs</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

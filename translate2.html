@@ -1,0 +1,50 @@
+<html>
+<title>
+Translation
+</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+    <style type="text/css">
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("1636cf12ee7183f3f1425f19d4dfab64.jpg");
+
+  /* Full height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.container4 {
+    height: 10em;
+    position: relative }
+div.container4 p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+</style>
+</head>
+</head>
+<body style="background-color:#000026;">
+    <div class="bg"></div>
+    <br>
+    <br>
+    <form action="http://localhost:8080/translate2" method="POST">
+        <div class="form-group" align="center">
+            <button type="submit" class="btn btn-light">Saved Translations </button>
+        </div>
+    </form>
+</body>
+</html>
